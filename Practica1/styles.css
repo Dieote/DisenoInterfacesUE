@@ -1,0 +1,80 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+
+header h1 {
+  color: #3b6dc0;
+  font-size: 1.8em;
+}
+
+header h2 {
+  font-style: italic;
+  color: #1d3c78;
+  margin-top: 5px;
+}
+
+/* Imagen principal (portada) */
+.portada {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.portada img {
+  width: 80%;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+/* Sección de imágenes */
+.imags {
+  text-align: center;
+  margin: 40px auto;
+  width: 90%;
+}
+
+.imags h3 {
+  text-align: left;
+  color: #1d3c78;
+  margin-bottom: 15px;
+}
+
+.galeria {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galeria img {
+  width: 30%;
+  min-width: 200px;
+  border-radius: 5px;
+}
+
+/* Descripción */
+.descripcion {
+  width: 80%;
+  margin: 0 auto 40px;
+  text-align: justify;
+  font-size: 1em;
+}
+
+.descripcion strong {
+  color: #000;
+}
+
+.descripcion em {
+  color: #333;
+}

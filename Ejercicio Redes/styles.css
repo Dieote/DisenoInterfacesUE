@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+}
+
+h2 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table.social-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.social-table th,
+.social-table td {
+    border: 1px solid #999;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.social-table th {
+    background-color: #f0f0f0;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px; /* espacio entre estrellas */
+}
+
+.stars img {
+    width: 20px;
+    height: 20px;
+}
+
+p {
+    margin: 5px 0 0 0;
+    font-size: 0.9em;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

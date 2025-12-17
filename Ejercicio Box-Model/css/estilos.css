@@ -32,6 +32,8 @@ header h4 {
 }
 
 .content_wrapper {
+  display: flex;
+  gap: 20px;
   margin-top: 20px;
 }
 
@@ -44,17 +46,20 @@ nav {
 
 nav div {
   font-style: italic;
+  cursor: pointer;
 }
 
 main {
   flex: 2;
   border: 1px solid #000000;
+  border-radius: 15px;
   padding: 15px;
   text-align: center;
 }
 
 main img {
   width: 70%;
+  border-radius: 12px;
   margin-bottom: 15px;
 }
 
@@ -64,13 +69,16 @@ main p {
 }
 
 .content_wrapper article {
+  flex: 1;
   border: 1px solid #000000;
+  border-radius: 15px;
   padding: 15px;
   text-align: center;
 }
 
 .content_wrapper article img {
   width: 100%;
+  border-radius: 12px;
   margin-bottom: 10px;
 }
 
@@ -79,12 +87,43 @@ main p {
   font-size: 16px;
 }
 
+.articles {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.articles article {
+  border: 1px solid #000000;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: center;
+}
+
+.articles img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.articles h2 {
+  font-style: italic;
+  font-size: 15px;
+}
+
 footer {
   margin-top: 30px;
   padding: 15px 0;
   border-top: 1px solid #000000;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  font-size: 14px;
+}
+
+footer address {
+  font-style: italic;
 }
 
 .social img {

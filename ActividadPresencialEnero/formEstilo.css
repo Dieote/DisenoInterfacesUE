@@ -1,0 +1,46 @@
+/* sin margenes del navegador*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.formulario {
+    width: 400px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 50px auto;
+}
+
+label {
+    display: block; /*cada label ocuopa una linea*/
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 95%;    /* ocupa todo el ancho */
+    padding: 10px;  /* espacio interno de cuadro de texto*/
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /*cambia el cursor*/
+    margin-top: 15px;
+    width: 410px;
+}
+
+textarea {
+    height: 90px;
+    resize: none;/* evita cambiar tamaño */
+}

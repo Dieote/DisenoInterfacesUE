@@ -10,21 +10,32 @@
 <div class="formulario">
 
 	<form>	
+		<div class="fila">
+			<label for="nombre">Nombre</label>
+			<input type="text" name="nombre" id="nombre" />
+		</div>
 		
-		<label for="nombre">Nombre</label>
-		<input type="text" name="nombre" id="nombre" />
+		<div class="fila">
+			<label for="apellidos">Apellidos</label>
+			<input type="text" name="apellidos" id="apellidos"/>
+		</div>
 		
-		<label for="apellidos">Apellidos</label>
-		<input type="text" name="apellidos" id="apellidos"/>
+		<div class="fila">
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email" />
+		</div>
 		
-		<label for="email">Email</label>
-		<input type="email" name="email" id="email" />
+		<div class="fila">
+			<label for="asunto">Asunto</label>
+			<input type ="text" name="asunto" id="asunto" />
+		</div>
 		
-		<label for="asunto">Asunto</label>
-		<input type ="text" name="asunto" id="asunto" />
-		
-		<label for="mensaje">Mensaje</label>
-		<textarea name="mensaje" for="mensaje" maxlength="300"></textarea>
+		<div class="fila">
+			<label for="mensaje">Mensaje</label>
+		</div>
+		<div class="fila">	
+			<textarea name="mensaje" for="mensaje" maxlength="300"></textarea>
+		</div>
 		
 		<input type="submit" name="enviar" value="enviar datos"/>
 	</form>

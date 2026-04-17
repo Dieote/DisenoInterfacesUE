@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom'
-import { useTheme } from '../context/ThemeContext'
+import { useTema } from '../context/TemaContext'
 
 export default function Navbar() {
-  const { dark, toggleTheme } = useTheme()
+  const { dark, toggleTheme } = useTema()
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -27,6 +27,14 @@ export default function Navbar() {
                 end
               >
                 Inicio
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) => 'nav-link' + (isActive ? ' active' : '')}
+                to="/recetas"
+              >
+                Recetas
               </NavLink>
             </li>
             <li className="nav-item">

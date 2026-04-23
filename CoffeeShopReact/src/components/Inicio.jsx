@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
+import { useTema } from '../context/TemaContext'
 
 export default function Inicio() {
+  const { dark } = useTema()
+
   return (
     <section className="container text-center my-5">
       <h1 className="mb-3">Bienvenido a Café Aroma</h1>
@@ -10,7 +13,7 @@ export default function Inicio() {
 
       {/* Dos botones: uno para el catálogo de recetas (API) y otro para la tienda (fake) */}
       <div className="d-flex justify-content-center gap-3 mt-4">
-        <Link to="/recetas" className="btn btn-outline-dark btn-lg">
+        <Link to="/recetas" className={`btn ${dark ? 'btn-outline-light' : 'btn-outline-dark'} btn-lg`}>
           <i className="bi bi-journal-text me-2"></i>
           Ver recetas
         </Link>
